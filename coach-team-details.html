@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>教练团队-教练详情</title>
+    <!-- Bootstrap.min.css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--Project.css-->
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Mouse hover css3-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="hd-left">
+                <div class="logo"><a href="index.html"><img src="img/logo.png" alt="动力时尚"></a></div>
+            </div>
+            <div class="hd-right">
+                <ul class="navmenu">
+                    <li><a href="index.html">网站首页</a></li>
+                    <li><a href="recovery-case.html">康复课程</a></li>
+                    <li class="drop">
+                        <a href="branch.html">分店导航</a>
+                        <ul class="sub-nav">
+                            <li><a href="branch-details.html">深圳莲花店</a></li>
+                            <li><a href="#">深圳彩田店</a></li>
+                            <li><a href="#">惠州方直店</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="bodybuilding.html">健身课程</a></li>
+                    <li class="active"><a href="coach-team.html">教练团队</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="news.html">新闻动态</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a target="_blank" href="#"><img src="img/subbanner4.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="phoneframe">
+                <span class="opacity"><i class="glyphicon glyphicon-earphone"></i></span>
+                <span class="phone">0755-82863633</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="subpage">
+    <div class="subpage-pagination">
+        <div class="container">
+            <span><a href="index.html">网站首页</a></span>
+            <span><img src="img/icon1.jpg"><a href="#">教练团队</a></span>
+            <span><img src="img/icon1.jpg"><a href="#">艾伦 ALLEN</a></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="subpage-content">
+            <div class="row subpage-team">
+                <div class="col-lg-5"><img src="img/team_6.jpg"></div>
+                <div class="col-lg-7">
+                    <h1>艾伦 ALLEN</h1>
+                    <P class="color-gray">高级私人教练经理</P>
+                    <p>IPTA美国体适能学院 高级私人教练</p>
+                    <p>AASFP亚洲体适能学院 高级私人教练</p>
+                    <p>亚洲体适能学院 运动损伤康复训练指导教练</p>
+                    <p>IFFBB体系高级私人教练</p>
+                    <p>ACSM美国运动医学学会认证体适能教练</p>
+                    <p>擅长：女性：减脂，瘦身，S型曲线打造，产前训练及产后恢复</p>
+                    <p>男性：减脂，增肌，打造V型身材，王字腹肌</p>
+                    <p>青少年：假期极速减脂，瘦身，男女：职业病康复</p>
+                </div>
+            </div>
+            <div id="four_flash">
+                <div class="flashBg">
+                    <ul class="mobile">
+                        <li><img src="img/team_7.jpg" /></li>
+                        <li><img src="img/team_8.jpg" /></li>
+                        <li><img src="img/team_9.jpg" /></li>
+                        <li><img src="img/team_7.jpg" /></li>
+                        <li><img src="img/team_8.jpg" /></li>
+                        <li><img src="img/team_9.jpg" /></li>
+                    </ul>
+                </div>
+                <div class="but_left"><a href="###"><img src="img/qianxleft.png" /></a></div>
+                <div class="but_right"><a href="###"><img src="img/qianxright.png" /></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+            <p>
+                <div class="copyright-list">
+                    <a href="#">公司简介</a>
+                    <a href="#">课程介绍</a>
+                    <a href="#">会员中心</a>
+                    <a href="#">关于我们</a>
+                    <a href="#">联系我们</a>
+                </div>
+            </p>
+            <p>
+                动力时尚健身版权所有 Copyright ©2005-2016,<a href="#">www.xxxx.com</a>
+                <span>电话：0755-8270 7101</span>
+                <span>传真：0755-123456X8</span>
+                <span>地址：福田笋岗西路美莲大厦A座一楼</span>
+            </p>
+            <p>备案序号：<a href="#">沪ICP备05028432号</a></p>
+    </div>
+</footer>
+<script src="js/jquery-3.1.1.js"></script>
+<!-- Bootstrap.min.js -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!--Mouse hover js-->
+<script src="js/app.js"></script>
+<!--Mouse hover js-->
+<script>
+    //导航二级菜单
+    $(function () {
+        $(".drop").hover(function(){
+            $(this).children('.sub-nav').stop(true,true).show(300);
+        },function(){
+            $(this).children('.sub-nav').stop(true,true).hide(300);
+        });
+    });
+
+    //图片左右切换
+    var _index5=0;
+    $("#four_flash .but_right img").click(function(){
+        _index5++;
+        var len=$(".flashBg ul.mobile li").length;
+        if(_index5+5>len){
+            $("#four_flash .flashBg ul.mobile").stop().append($("ul.mobile").html());
+        }
+        $("#four_flash .flashBg ul.mobile").stop().animate({left:-_index5*401},1000);
+    });
+
+    $("#four_flash .but_left img").click(function(){
+        if(_index5==0){
+            $("ul.mobile").prepend($("ul.mobile").html());
+            $("ul.mobile").css("left","-1380px");
+            _index5=6
+        }
+        _index5--;
+        $("#four_flash .flashBg ul.mobile").stop().animate({left:-_index5*401},1000);
+    });
+</script>
+</body>
+</html>
